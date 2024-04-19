@@ -13,11 +13,5 @@ variable "public_subnets" {
 variable "private_subnets" {
   description = "VPC Private Subnets"
   type        = list(string)
-  default     = ["10.0.1.0/24", "10.0.2.0/24"]
-}
-
-variable "create_nat" {
-  description = "Enable NAT Gateways for Private Subnets Outbound Communication"
-  type        = bool
-  default     = true
+  default     = ["10.0.201.0/24", "10.0.202.0/24"]
 }
