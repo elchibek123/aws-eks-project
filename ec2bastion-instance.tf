@@ -6,7 +6,7 @@ module "ec2_bastion" {
   ami_id                      = data.aws_ami.ubuntu.id
   instance_type               = var.instance_type
   vpc_security_group_ids      = [module.security_group_bastion.security_group_id]
-  subnet_id                   = element(module.vpc.private_subnets, 0)
+  subnet_id                   = element(module.vpc.public_subnets, 0)
   azs                         = data.aws_availability_zones.available.names
   associate_public_ip_address = true
   key_name                    = var.instance_keypair

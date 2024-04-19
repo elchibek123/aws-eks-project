@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "app.terraform.io/Elchibek/vpc/aws"
-  version = "1.0.1"
+  version = "1.0.2"
 
   cidr_block                 = var.cidr_block
   public_subnets             = var.public_subnets
