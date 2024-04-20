@@ -14,7 +14,7 @@ provider "aws" {
     tags = {
       OwnerContact = "elchibek.kamalov.com"
       Environment  = var.environment
-      Project      = "DevOpsProject"
+      Project      = "AWSEKSProject"
       Team         = "DevOps"
       ManagedBy    = "Terraform"
     }
