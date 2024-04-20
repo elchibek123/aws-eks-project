@@ -1,2 +1,2 @@
-# devops-project
-This repository is for the DevOps project's cloud infrastructure.
+# aws-eks-project
+This repository is for the AWS EKS project's cloud infrastructure.
