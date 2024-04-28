@@ -3,7 +3,7 @@ terraform {
     organization = "Elchibek"
 
     workspaces {
-      name = "Sandbox"
+      name = "sandbox-cluster-infrastructure"
     }
   }
 }
