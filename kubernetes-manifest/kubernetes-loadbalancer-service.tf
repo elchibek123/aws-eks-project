@@ -4,7 +4,7 @@ resource "kubernetes_service_v1" "lb_service" {
     annotations = {
       "service.beta.kubernetes.io/aws-load-balancer-type" = "alb"
       "alb.ingress.kubernetes.io/scheme"                  = "internet-facing"
-    }   
+    }
   }
 
   spec {

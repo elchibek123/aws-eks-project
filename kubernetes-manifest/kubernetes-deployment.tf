@@ -4,8 +4,8 @@ resource "kubernetes_deployment_v1" "myapp1" {
     labels = {
       app = "myapp1"
     }
-  } 
- 
+  }
+
   spec {
     replicas = 2
 
