@@ -20,3 +20,7 @@ data "aws_ami" "ubuntu" {
 }
 
 data "aws_availability_zones" "available" {}
+
+data "aws_eks_cluster_auth" "cluster_auth" {
+  name = aws_eks_cluster.eks_cluster.id
+}
