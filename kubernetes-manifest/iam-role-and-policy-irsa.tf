@@ -9,11 +9,11 @@ resource "aws_iam_role" "irsa_iam_role" {
         Effect = "Allow"
         Sid    = ""
         Principal = {
-          Federated = "${data.terraform_remote_state.eks.outputs.aws_iam_openid_connect_provider_arn}"
+          Federated = "${data.terraform_remote_state.eks_cluster.outputs.aws_iam_openid_connect_provider_arn}"
         }
         Condition = {
           StringEquals = {            
-            "${data.terraform_remote_state.eks.outputs.aws_iam_openid_connect_provider_extract_from_arn}:sub": "system:serviceaccount:default:irsa-demo-sa"
+            "${data.terraform_remote_state.eks_cluster.outputs.aws_iam_openid_connect_provider_extract_from_arn}:sub": "system:serviceaccount:default:irsa-demo-sa"
           }
         }        
       },
